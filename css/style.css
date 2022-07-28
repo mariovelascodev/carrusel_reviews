@@ -1,0 +1,163 @@
+/*
+=============
+Variables
+=============
+*/
+
+:root {
+    --clr-grey: #0E2940;
+    --clr-lightgrey: #A7C5D9;
+    --clr-darkblue: #031431;
+    --clr-blue1: #3EA1E9;
+    --clr-blue2: #49A6EA;
+    --clr-white: #EAF6FE;
+    --clr-white2: #FAFBFD;
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-secondary: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F1F5F8;
+}
+
+.reviews {
+    background-color: white;
+    width: 80%;
+    height: 102vh;
+    margin: 0 auto;
+    border-radius: 3%;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.title h2{
+    font-family: var(--ff-primary);
+    font-size: 2em;
+    margin: 1em auto 0.5em;
+}
+
+.underline {
+    background-color: var(--clr-blue1);
+    width: 5rem;
+    height: 0.25rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-container {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+}
+
+.img-container img {
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    border-right: 8px solid var(--clr-blue1);
+    display: block;
+    margin: auto;
+}
+
+#author {
+    text-align: center;
+    font-family: var(--ff-primary);
+    font-size: 1.2em;
+    color: var(--clr-darkblue);
+    text-transform: capitalize;
+}
+
+#job {
+    text-align: center;
+    font-family: var(--ff-secondary);
+    font-size: 0.8em;
+    color: var(--clr-blue2);
+    text-transform: uppercase;
+}
+
+#info {
+    margin: 0.5em auto;
+    text-align: center;
+    font-family: var(--ff-secondary);
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: var(--clr-lightgrey);
+    width: 80%;
+}
+
+.button-container {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev-btn {
+    margin-right: 0.5em;
+    background-color: transparent;
+    border: none;
+    font-size: 1.1em;
+}
+
+.next-btn {
+    margin-left: 0.5em;
+    background-color: transparent;
+    border: none;
+    font-size: 1.1em;
+}
+
+button {
+    color: var(--clr-blue2);
+    cursor: pointer;
+}
+
+.random-btn {
+    background-color: var(--clr-white2);
+    border: 2px solid var(--clr-blue2);
+    border-radius: 7px;
+    width: 7.5em;
+    display: block;
+    padding: 0.3em;
+    margin: 1em auto;
+}
+
+.random-btn:hover {
+    background-color: var(--clr-blue1);
+    color: var(--clr-white);
+}
+
+@media screen and (min-width: 768px){
+    .reviews {
+        height: 40vh;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .reviews {
+        height: 52vh;
+    }
+
+    #info {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .reviews {
+        width: 50%;
+        height: 46vh;
+    }
+
+    #info {
+        width: 52%;
+    }
+}
